@@ -9,7 +9,7 @@ interface AllTasksProps {
 
 export function AllTasks({ tasks, onDelete, onComplete }: AllTasksProps) {
   const noOfTasks = tasks.length;
-  const completedTasks = tasks.filter((task) => task.isCompleted).length;
+  const completedTasks = tasks.filter((task: any) => task.isCompleted).length;
   return (
     <section className={styles.tasks}>
       <header className={styles.header}>
