@@ -27,7 +27,7 @@ export function AllTasks({ tasks, onDelete, onComplete }: AllTasksProps) {
       </header>
 
       <div className={styles.list}>
-        {tasks.map((task) => (
+        {tasks.map((task: any) => (
           <Task
             key={task.id}
             task={task}
