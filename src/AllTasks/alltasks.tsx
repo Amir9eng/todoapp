@@ -2,7 +2,7 @@ import styles from './alltasks.module.css';
 import { Task } from '../Task/task';
 
 interface AllTasksProps {
-  tasks: Task[];
+  tasks: any;
   onDelete: (taskId: string) => void;
   onComplete: (taskId: string) => void;
 }

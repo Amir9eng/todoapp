@@ -42,9 +42,8 @@ function App() {
     setTasksAndSave([...tasks, newTask]);
   };
 
-  const deleteTasksByIndex = (tasksId: any) => {
-    const newTasks = [...tasks];
-    newTasks.splice(tasksId, 1);
+  const deleteTasksByIndex = (taskId: string) => {
+    const newTasks = tasks.filter((task) => task.id !== taskId);
     setTasksAndSave(newTasks);
   };
 
